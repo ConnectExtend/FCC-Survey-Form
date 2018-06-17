@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: #3d4448;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    background-image: linear-gradient(-30deg, #add8e6, rgba(70, 130, 180, 0.7) 60%, #add8e6);
+    font-size: 16px;
+}
+
+
+/* header */
+
+.header-wrapper {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo-container {
+    width: 180px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 5px solid #ffd700;
+}
+
+.head1 {
+    font-size: 1.2em;
+    letter-spacing: 1.2px;
+    margin: 25px 0 15px;
+    color: #141716;
+}
+
+.head2-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.head2 {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 0.9em;
+}
+
+
+/* product tradename */
+
+.motm {
+    font-style: italic;
+}
+
+
+/* form */
+
+.main-wrapper {
+    background: #f9f9f9;
+    border: 1px solid #4682b4;
+    border-radius: 8px;
+    margin: 0 auto 20px;
+    padding: 0 10px 15px;
+    width: 80%;
+    color: #3d4448    
+}
+
+
+/* form - demographics */
+
+.demographics-group {
+    padding: 2px 12px 5px 4px;
+}
+
+.demographics-group label {
+    font-size: 14px;
+    padding: 0.6em 0 0;
+    display: block;
+}
+
+.demographics-group input {
+    font-size: 12px;
+    border: 1px solid #4682b4;
+    padding: 0.3em;
+    width: 100%;
+}
+
+.demographics-group input:focus {
+    border: 2px solid #ffd700;
+    background: #add8e6;
+    outline: none;
+}
+
+
+/* form - quantity purchased */
+
+.quantity-tried {
+    padding: 8px 3px 5px 4px;
+}
+
+.quantity-tried label {
+    font-size: 13px;
+    padding: 0.5em 0 0.15em;
+    display: block;
+}
+
+.quantity-tried input {
+    font-size: 12px;
+    border: 1px solid #4682b4;
+    padding: 0.3em 0 0.3em 0.45em;
+    width: 20%;
+}
+
+.quantity-tried input:focus {
+    font-size: 12px;
+    border: 2px solid #ffd700;
+    background: #add8e6;
+    padding: 0.3em 0 0.3em 0.45em;
+    width: 20%;
+}
+
+
+/* form - checkboxes */
+
+.varieties-group {
+    padding: 8px 3px 5px 4px;
+}
+
+.varieties-tried {
+    border: 1px solid #4682b4;
+}
+
+.varieties-tried:last-child {
+    padding-bottom: 1px;
+}
+
+.varieties-group legend {
+    font-size: 13px;
+    padding: 0 0.3em;
+}
+
+
+/* legend note in parens */
+
+.parens {
+    font-size: 8.5px;
+}
+
+.varieties-item {
+    display: block;
+    font-size: 13px;
+    padding: 0.3em 0 0.2em 0.6em;
+}
+
+.varieties-item input {
+    font-size: 12px;
+    padding: 0.3em 0 0.3em 0.45em;
+}
+
+
+/* form - meals purchase again */
+
+.buyagain-group {
+    padding: 8px 3px 5px 4px;
+}
+
+.buy-again {
+    border: 1px solid #4682b4;
+}
+
+.buy-again:last-child {
+    padding-bottom: 1px;
+}
+
+.buy-again legend {
+    font-size: 13px;
+    padding: 0 0.3em;
+}
+
+.buyagain-item {
+    display: block;
+    font-size: 13px;
+    padding: 0.3em 0 0.2em 0.6em;
+}
+
+
+/* form - preferred location */
+
+.preferredstore-group {
+    padding: 8px 3px 5px 4px;
+}
+
+.preferred-store label {
+    font-size: 13px;
+    padding: 0.5em 0 0.15em;
+    display: block;
+}
+
+.preferred-store select {
+    font-size: 12px;
+    border: 1.2px solid #4682b4;
+    padding: 0.3em 0 0.1em 0.45em;
+    width: 60%;
+}
+
+/* form - missing ingredients */
+
+.missing-ingred {
+	padding: 8px 3px 4px 4px;
+}
+
+.yes-no {
+    border: 1px solid #4682b4;
+}
+
+.yes-no:last-child {
+    padding-bottom: 1px;
+}
+
+.missing-ingred legend {
+    font-size: 13px;
+    padding: 0 0.1em;
+}
+
+.ingred-item {
+    display: inline-block;
+    font-size: 13px;
+    padding: 0.3em 0.5em 0.2em 0.6em;
+}
+
+/* form - clear instructions */
+
+.clear-instructions {
+	padding: 7px 3px 5px 4px;
+}
+
+.clear-instructions legend {
+    font-size: 13px;
+    padding: 0 0.1em;
+}
+
+.instructions-item {
+    display: inline-block;
+    font-size: 13px;
+    padding: 0.3em 0.5em 0.2em 0.6em;
+}
+
+/* comments */
+
+.comments {
+    padding: 3px 3px 5px 4px;
+}
+
+.comments-question {
+	font-size: 13px;
+}
+
+.comments textarea {
+    border: 1px solid #4682b4;
+    width: 100%;
+    font-size: 10px;
+	margin-top: 0.2em;
+	padding: 0 0.1em;
+}
+
+.thank-you {
+	text-align: center;
+	font-size: 0.65em;
+	margin-bottom: 3px;
+}
+
+/* form submission */
+
+.submit-form {
+    padding: 8px 0 5px 0;
+    text-align: center;
+}
+
+.submit-button button {
+    background: linear-gradient(-50deg, rgba(70, 130, 180, 0.7), #ffd700 65%);
+    font-weight: bold;
+    padding: 0.7em;
+    margin: 0 auto;
+    width: 30%;
+    border: 0;
+    border-radius: 8px;
+}
+
+.submit-button button:hover {
+    background: #4682b4;
+    font-weight: bold;
+    color: #fff;
+    padding: 0.7em;
+    margin: 0 auto;
+    width: 30%;
+    border: 0;
+    border-radius: 8px;
+}
+
+
+
+/* media queries */
+
+@media screen and (min-width: 700px) {
+	.varieties-item,
+	.buyagain-item {
+		display: inline-block;
+		padding-right: 35px;
+	}
+
+	.head2-container {
+		width: 70%;
+	}
+
+	.head2 {
+		line-height: 1.4;
+   		font-size: 1.1em;
+	}
+
+	.thank-you {
+	text-align: center;
+	font-size: 0.8em;
+	margin-bottom: 3px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.varieties-item,
+	.buyagain-item {
+		display: inline-block;
+		padding-right: 35px;
+	}
+
+	.main-wrapper {
+		width: 60%;
+	}
+
+	.head1 {
+		font-size: 1.4em;
+	}
+
+	.head2-container {
+		width: 50%;
+	}
+
+	.head2 {
+		line-height: 1.4;
+   		font-size: 1.1em;
+	}
+
+	.thank-you {
+	text-align: center;
+	font-size: 0.9em;
+	margin-bottom: 3px;
+	}
+}
+
+

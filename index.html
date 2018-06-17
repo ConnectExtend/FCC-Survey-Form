@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link rel="stylesheet" href="survey.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:500,500i,700" rel="stylesheet">
+    <title>Meals on the Move Survey</title>
+</head>
+
+<body>
+    <div class="page-wrapper animated bounceInLeft">
+        <header class="header-wrapper">
+            <div class="logo-container">
+                <img src="https://s9.postimg.org/xx212brgf/motm_logo.png" alt="" aria-hidden="true">
+            </div>
+            <h1 class="head1" id="title">Customer Satisfaction Survey</h1>
+            <div class="head2-container">
+                <p class="head2" id="description">Earlier this year, SuperValue Stores began offering <span class="motm">Meals on the Move</span> as a convenient and delicious meal-prep solution. We&apos;d like to get your feedback on the <span class="motm">Meals on the Move</span> program.</p>
+            </div>
+        </header>
+        <main>
+            <div class="main-wrapper">
+                <form id="survey-form" method="POST">
+                    <div class="demographics-group">
+                        <label for="name" id="name-label">*Name</label>
+                        <input id="name" type="text" name="name" size="60" placeholder="Enter your name" required>
+                        <label for="postalcode" id="postalcode-label">*ZIP Code</label>
+                        <input id="postalcode" type="text" name="postalcode" size="60" maxlength="5" pattern="[0-9]{5}" placeholder="Enter your 5-digit zip code" required>
+                        <label for="email" id="email-label">*Email</label>
+                        <input id="email" type="email" name="email" size="60" placeholder="Enter your email" required>
+                    </div>
+                    <div class="quantity-tried">
+                        <label for="quantity" id="number-label">How many different <span class="motm">Meals on the Move</span> have you tried?</label>
+                        <input id="quantity" type="number" name="quantity" min="1" max="10" value="1">
+                    </div>
+                    <div class="varieties-group">
+                        <fieldset class="varieties-tried">
+                            <legend>*Which <span class="motm">Meals on the Move</span> have you tried? <span class="parens">(check all that apply)</span></legend>
+                            <div class="varieties-item">
+                                <input id="dijon-pork" type="checkbox" name="whichmeals" value="dijon-pork" required>
+                                <label for="dijon-pork">Chili-Dijon Pork Tenderloin</label>
+                            </div>
+                            <div class="varieties-item">
+                                <input id="greek-chkn" type="checkbox" name="whichmeals" value="greek-chkn">
+                                <label for="greek-chkn">Greek Chicken</label>
+                            </div>
+                            <div class="varieties-item">
+                                <input id="mini-loaves" type="checkbox" name="whichmeals" value="mini-loaves">
+                                <label for="mini-loaves">Mini-Meatloaves</label>
+                            </div>
+                            <div class="varieties-item">
+                                <input id="lime-chkn" type="checkbox" name="whichmeals" value="lime-chkn">
+                                <label for="lime-chkn">Honey-Lime Chicken</label>
+                            </div>
+                            <div class="varieties-item">
+                                <input id="steak-fajitas" type="checkbox" name="whichmeals" value="steak-fajitas">
+                                <label for="steak-fajitas">Steak Fajitas</label>
+                            </div>
+                            <div class="varieties-item">
+                                <input id="chkn-tenders" type="checkbox" name="whichmeals" value="chkn-tenders">
+                                <label for="chkn-tenders">Garlic-Parmesan Chicken Tenders</label>
+                            </div>
+                            <div class="varieties-item">
+                                <input id="apple-porkchops" type="checkbox" name="whichmeals" value="apple-porkchops">
+                                <label for="apple-porkchops">Apple Pork Chops</label>
+                            </div>
+                            <div class="varieties-item">
+                                <input id="chkn-fajitas" type="checkbox" name="whichmeals" value="chkn-fajitas">
+                                <label for="chkn-fajitas">Chicken Fajitas</label>
+                            </div>
+                            <div class="varieties-item">
+                                <input id="hawaiian-chkn" type="checkbox" name="whichmeals" value="hawaiian-chkn">
+                                <label for="hawaiian-chkn">Hawaiian-Pineapple Chicken</label>
+                            </div>
+                            <div class="varieties-item">
+                                <input id="bruschetta-chkn" type="checkbox" name="whichmeals" value="bruschetta-chkn">
+                                <label for="bruschetta-chkn">Bruschetta Chicken</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="buyagain-group">
+                        <fieldset class="buy-again">
+                            <legend>*How likely are you to purchase another <span class="motm">Meal on the Move</span>?</legend>
+                            <div class="buyagain-item">
+                                <input id="very-likely" type="radio" name="buy-again" value="very-likely" required>
+                                <label for="very-likely">Very Likely</label>
+                            </div>
+                            <div class="buyagain-item">
+                                <input id="somewhat-likely" type="radio" name="buy-again" value="somewhat-likely">
+                                <label for="somewhat-likely">Somewhat Likely</label>
+                            </div>
+                            <div class="buyagain-item">
+                                <input id="not-likely" type="radio" name="buy-again" value="not-likely">
+                                <label for="not-likely">Not Likely</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="preferredstore-group">
+                        <div class="preferred-store">
+                            <label for="dropdown">*Which SuperValue store do you typically shop at?</label>
+                            <select id="dropdown" name="pref-store" size="2" required>
+                                <option disabled>Select a store location</option>
+                                <option value="colton">Colton Blvd.</option>
+                                <option value="broadway">North Broadway Ave.</option>
+                                <option value="hwy-33">Hwy. 33</option>
+                                <option value="perimeter">Perimeter Dr.</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="missing-ingred">
+                        <fieldset class="yes-no">
+                            <legend>*Did the meal kit include all of the store-provided ingredients?</legend>
+                            <div class="ingred-item">
+                                <input id="nothing-missing" type="radio" name="missing-ingred" value="yes" required>
+                                <label for="nothing-missing">Yes</label>
+                            </div>
+                            <div class="ingred-item">
+                                <input id="smthg-missing" type="radio" name="missing-ingred" value="no">
+                                <label for="smthg-missing">No</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="clear-instructions">
+                        <fieldset class="yes-no">
+                            <legend>*Were the meal prep instructions clear?</legend>
+                            <div class="instructions-item">
+                                <input id="yes-clear" type="radio" name="clear-instructions" value="yes" required>
+                                <label for="yes-clear">Yes</label>
+                            </div>
+                            <div class="instructions-item">
+                                <input id="not-clear" type="radio" name="clear-instructions" value="no">
+                                <label for="not-clear">No</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="comments">
+                        <label class="comments-question">If you answered no to either of these questions, please tell us what was missing or unclear.</label>
+                        <textarea cols="50" rows="4" placeholder="Tell us which meal kit and what was missing or unclear in the instructions"></textarea>
+                    </div>
+                    <div>
+                        <p class="thank-you">Thank you for taking the time to give us your feedback.</p>
+                    </div>
+                    <div class="submit-form">
+                        <div class="submit-button">
+                            <button type="submit" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
